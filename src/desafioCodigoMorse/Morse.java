@@ -1,4 +1,4 @@
-package com.grupo02;
+package desafioCodigoMorse;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -52,18 +52,18 @@ public class Morse {
 
     public String convertToPortugues(String message) {
         String[] words = message.split("/");
-        String resultado = "";
+        String result = "";
         for (String s : words) {
             String[] word = s.split(" ");
             for (String value : word) {
-                if(value == "") {
+                if (value == "") {
                     continue;
                 }
-                resultado += map.get(value);
+                result += map.get(value);
             }
-            resultado += " ";
+            result += " ";
         }
-        return resultado;
+        return result;
     }
 
     public Map<String, String> getMap() {

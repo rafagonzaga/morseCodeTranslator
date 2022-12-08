@@ -1,13 +1,15 @@
-import com.grupo02.Morse;
-import com.grupo02.Portugues;
+package desafioCodigoMorse;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
 
-        String message = "1234567890";
-        Portugues pt = new Portugues();
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Digite a mensagem: ");
+        String message = entrada.nextLine();
+//        String message = "Boa Sorte";
+        Portuguese pt = new Portuguese();
         Morse mo = new Morse();
 //        String codificada = "-... --- .- / ... --- .-. - . ";
         String codificada = ".--- --- .- --- / -.-. --- -. - .- / -.-. --- -- / .- / ... ..- .- / .- .--- ..- -.. .-";
@@ -16,5 +18,6 @@ class Main {
         System.out.println(texto);
         texto = mo.convertToPortugues(texto);
         System.out.println(texto);
+        entrada.close();
     }
 }

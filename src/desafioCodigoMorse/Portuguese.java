@@ -1,13 +1,13 @@
-package com.grupo02;
+package desafioCodigoMorse;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Portugues {
+public class Portuguese {
 
     private Map<String, String> map = new HashMap<>();
 
-    public Portugues() {
+    public Portuguese() {
         initiateDict();
     }
 
