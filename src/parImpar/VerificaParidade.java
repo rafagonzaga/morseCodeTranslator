@@ -12,7 +12,7 @@ public class VerificaParidade {
     }
 
     public String verificarParidade() {
-        if(this.num % 2 == 0){
+        if (this.num % 2 == 0) {
             return "O número é par";
         }
         return "O número é ímpar";

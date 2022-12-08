@@ -10,8 +10,5 @@ public class TestaCalculadora {
         System.out.println(calc.multiplicar());
         System.out.println(calc.dividir());
 
-//        calc.setValor2(2.);
-//        System.out.println(calc.dividir());
-
     }
 }

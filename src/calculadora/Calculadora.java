@@ -5,9 +5,6 @@ public class Calculadora {
     private Double valor1;
     private Double valor2;
 
-    public Calculadora() {
-    }
-
     public Calculadora(Double valor1, Double valor2) {
         this.valor1 = valor1;
         this.valor2 = valor2;
